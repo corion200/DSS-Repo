@@ -1,0 +1,173 @@
+/* ==========================================================================
+   Estilos generales MUY básicos y sin clases/IDs
+   Ideal para formularios y tablas simples en PHP
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background: #f8f9fa;
+    padding: 1rem;
+}
+
+/* Formularios */
+form {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 1.5rem 0;
+    max-width: 700px;
+}
+
+label {
+    display: block;
+    margin: 0 0 0.4rem 0;
+    font-weight: 600;
+    color: #444;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Botones */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    padding: 0.7rem 1.4rem;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background: #0055aa;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+th, td {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #f1f5f9;
+}
+
+/* Mensajes comunes (usando etiquetas semánticas o divs simples) */
+p strong + em,
+div[style*="color: green"],
+div[style*="color: red"] {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+div[style*="color: green"] {
+    background: #e6ffed;
+    border: 1px solid #b3ffc2;
+    color: #006600;
+}
+
+div[style*="color: red"] {
+    background: #ffe6e6;
+    border: 1px solid #ffcccc;
+    color: #990000;
+}
+
+/* Responsive básico */
+@media (max-width: 640px) {
+    form {
+        padding: 1rem;
+    }
+    
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    td:before {
+        position: absolute;
+        top: 0.8rem;
+        left: 1rem;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        content: attr(data-label);
+    }
+}
