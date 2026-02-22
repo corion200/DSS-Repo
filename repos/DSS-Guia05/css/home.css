@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+}
+
+.header {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: #002244;
+    margin: 0;
+    padding: 10px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #5fc9f6;
+}
+
+.contenido,
+.contenido-alterno,
+.contenido-institucional {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th,
+.tabla td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla th {
+    background: #003366;
+    color: white;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+}
+
+.grid div {
+    flex: 1;
+    background: #e9f2ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.imagen {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #003366;
+    color: white;
+    margin-top: 20px;
+}
+
+.highlight {
+    background: yellow;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+textarea,
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
